@@ -1,9 +1,11 @@
 package com.krakedev.figuras;
 
-public class Graficador{
-	
+public class Graficador {
+
 	public void graficar(Figura figura) {
-		System.out.println("GRAFICANDO NOMBRE: "+figura.getNombre()+" DE COLOR: "+figura.getColor());
+		// figura.calcularPerimetro();
+		System.out.println("Graficando: " + figura.getNombre() + " de Color: " + figura.getColor()
+				+ " con Perimetro: " + figura.calcularPerimetro()+" con Area: "+figura.calcularArea());
 	}
 
 }

@@ -16,9 +16,17 @@ public class Cuadrado extends Figura {
 	public void setLado(int lado) {
 		this.lado = lado;
 	}
-
+	
+	@Override
 	public int calcularPerimetro() {
 		return 4 * lado;
 	}
+	
+	@Override
+	public double calcularArea() {
+		return lado * lado;
+	}
+	
+	
 
 }

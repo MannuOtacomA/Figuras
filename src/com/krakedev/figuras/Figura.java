@@ -1,11 +1,11 @@
 package com.krakedev.figuras;
 
-public class Figura {
+public abstract class Figura {
 
 	private String nombre;
 	private String color;
 
-	public Figura(String nombre, String color) {		
+	public Figura(String nombre, String color) {
 		this.nombre = nombre;
 		this.color = color;
 	}
@@ -25,6 +25,10 @@ public class Figura {
 	public void setColor(String color) {
 		this.color = color;
 	}
+
+	public abstract int calcularPerimetro();
+
+	public abstract double calcularArea();
 
 	@Override
 	public String toString() {
